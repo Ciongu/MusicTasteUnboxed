@@ -1,7 +1,8 @@
 const clientId = "916ac11fe0944e138feb1b53a22f5a47";
 const clientSecret = "647fd770106648b2b5c3b20af855f782";
 const tokenUrl = "https://accounts.spotify.com/api/token";
-const redirectUri = "http://192.168.1.224:49867/public/page.html";
+const redirectUri =
+  "https://ciongu.github.io/MusicTasteUnboxed/public/page.html";
 let authUri = "https://accounts.spotify.com/authorize?";
 const scope =
   "user-read-private user-read-email user-top-read user-library-read";
