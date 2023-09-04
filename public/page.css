@@ -1,0 +1,101 @@
+@font-face {
+  font-family: circularSP;
+  src: url(./fonts/CircularSpotifyText-Medium.otf);
+}
+
+@font-face {
+  font-family: circularSPLight;
+  src: url(./fonts/CircularSpotifyText-Light.otf);
+}
+
+:root {
+  --green: #1fdf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url("./imgs/background.jpg");
+  font-family: circularSP;
+  color: var(--green);
+}
+
+main {
+  width: 99vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin-top: 6rem;
+}
+
+.songs {
+  width: 60%;
+}
+
+ul {
+  list-style: none;
+}
+
+.swiper-slide {
+  background-color: #121212c8;
+  /* border: 1px solid #12121272; */
+  border-radius: 20px;
+}
+
+h1 {
+  text-align: center;
+  font-size: 3rem;
+  padding: 2rem;
+}
+
+li {
+  display: flex;
+  padding: 1rem;
+}
+
+.artist-name {
+  font-size: 1rem;
+  font-family: CircularSPLight;
+}
+
+.track-name {
+  font-size: 1.5rem;
+}
+
+img {
+  max-width: 100px;
+}
+
+.details {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-left: 1rem;
+}
+
+.buttons {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+}
+
+button {
+  font-size: 1.4rem;
+  padding: 0.6rem;
+  margin-top: 1rem;
+  background-color: var(--green);
+  border: none;
+
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}

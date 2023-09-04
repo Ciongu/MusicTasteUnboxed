@@ -1,0 +1,64 @@
+@font-face {
+  font-family: circularSP;
+  src: url(./fonts/CircularSpotifyText-Medium.otf);
+}
+:root {
+  --green: #1fdf64;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: circularSP;
+}
+
+body {
+  background-image: url("./imgs/background.jpg");
+  /* #121212 */
+}
+
+h1 {
+  color: var(--green);
+  font-size: 9rem;
+}
+
+.title {
+  padding-left: 1.5rem;
+  padding-top: 6rem;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+button {
+  font-size: 2rem;
+  width: 12rem;
+  height: 3.5rem;
+  background-color: var(--green);
+  border: none;
+  margin-top: 20rem;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+button:hover {
+  transform: scale(1.1);
+}
+
+h3 {
+  color: var(--green);
+}
+
+img {
+  height: 1.17em;
+  vertical-align: middle;
+}
