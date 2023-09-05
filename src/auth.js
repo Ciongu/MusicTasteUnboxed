@@ -36,7 +36,7 @@ const getAccesToken = async function () {
     body: body,
   });
   const data = await response.json()
-  console.log(data.access_token)
+
 
 
   return data.access_token
@@ -47,7 +47,7 @@ const getCode = function () {
   return code;
 };
 
-if (window.location.pathname === "/MusicTasteUnboxed/public/index.html") {
+if (window.location.pathname === "/public/index.html") {
   const btn = document.querySelector(".req-auth");
   btn.addEventListener("click", requestAuth);
 }

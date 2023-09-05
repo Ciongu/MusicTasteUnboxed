@@ -99,3 +99,34 @@ button {
 button:hover {
   transform: scale(1.1);
 }
+
+@media (max-width: 768px) {
+  main {
+    margin-top: 3rem;
+  }
+
+  .songs {
+    width: 95%;
+  }
+
+  .track-name {
+    font-size: 1.2rem;
+  }
+
+  .details {
+    margin-left: 0.5rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+    padding: 1rem;
+  }
+
+  .buttons {
+    width: 100%;
+  }
+
+  button {
+    font-size: 1.2rem;
+  }
+}
