@@ -4,8 +4,7 @@ const tokenUrl = "https://accounts.spotify.com/api/token";
 const redirectUri =
   "https://ciongu.github.io/MusicTasteUnboxed/public/page.html";
 let authUri = "https://accounts.spotify.com/authorize?";
-const scope =
-  "user-read-private user-read-email user-top-read user-library-read";
+const scope = "user-read-private user-read-email user-top-read ";
 const state = Math.random().toString(36).slice(2);
 
 const requestAuth = function () {
@@ -47,8 +46,8 @@ const getCode = function () {
   return code;
 };
 
-if (window.location.pathname === "/MusicTasteUnboxed/public/index.html") {
-  const btn = document.querySelector(".req-auth");
+const btn = document.querySelector(".req-auth");
+if (btn) {
   btn.addEventListener("click", requestAuth);
 }
 
@@ -70,4 +69,5 @@ if (logOutBtn) {
 }
 
 const accToken = await getAccesToken();
+
 export default accToken;
