@@ -47,5 +47,5 @@ const createDOM = function (song, container) {
   details.append(trackName, artistName);
   li.append(trackImg, details);
 };
-displayTracks(suggTracks, recTracksEl);
 displayTracks(topTracks, topTracksEl);
+displayTracks(suggTracks, recTracksEl);
