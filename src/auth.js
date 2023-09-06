@@ -59,10 +59,9 @@ const logout = function () {
 const logOutBtn = document.querySelector(".log-out");
 if (logOutBtn) {
   logOutBtn.addEventListener("click", function () {
+    logout();
     window.location.href =
       "https://ciongu.github.io/MusicTasteUnboxed/public/index.html";
-
-    logout();
   });
 }
 
