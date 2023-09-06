@@ -56,12 +56,15 @@ const logout = function () {
   window.location.href = "https://www.spotify.com/logout/";
 };
 
+const redirectLogin = function () {
+  window.location.href =
+    "https://ciongu.github.io/MusicTasteUnboxed/public/index.html";
+};
+
 const logOutBtn = document.querySelector(".log-out");
 if (logOutBtn) {
   logOutBtn.addEventListener("click", function () {
     logout();
-    window.location.href =
-      "https://ciongu.github.io/MusicTasteUnboxed/public/index.html";
   });
 }
 
