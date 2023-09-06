@@ -52,5 +52,14 @@ if (window.location.pathname === "/MusicTasteUnboxed/public/index.html") {
   btn.addEventListener("click", requestAuth);
 }
 
+if (window.location.pathname === "/MusicTasteUnboxed/public/page.html") {
+  const logOutBtn = document.querySelector(".log-out");
+  logOutBtn.addEventListener("click", function () {
+    window.location.href = "https://www.spotify.com/logout/";
+    window.location.href =
+      "https://ciongu.github.io/MusicTasteUnboxed/public/index.html";
+  });
+}
+
 const accToken = await getAccesToken();
 export default accToken;
