@@ -30,7 +30,7 @@ main {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  margin-top: 4rem;
+  margin-top: 2rem;
 }
 
 .songs {
@@ -112,10 +112,6 @@ header {
 }
 
 @media (max-width: 768px) {
-  main {
-    margin-top: 3rem;
-  }
-
   .songs {
     width: 95%;
   }
