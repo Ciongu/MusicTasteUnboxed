@@ -67,7 +67,7 @@ li {
   font-size: 1.5rem;
 }
 
-img {
+.track-img {
   max-width: 100px;
 }
 
@@ -98,6 +98,17 @@ button {
 
 button:hover {
   transform: scale(1.1);
+}
+
+header {
+  height: 4rem;
+  width: 100vw;
+  background-color: #121212c8;
+}
+
+.logo {
+  width: 9rem;
+  padding: 1rem;
 }
 
 @media (max-width: 768px) {
